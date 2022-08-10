@@ -1,0 +1,34 @@
+Para o html é necessário abrir e fechar as tags
+h1-6 são os 'cabeçalhos' e definem a importancia de cada elemento
+<br> quebra linha e é uma tag que se auto fecha
+<hr>linhas horizontais
+<hr size="3" noshade> com atributos html
+<center>centralizador
+<!--(qualquer comentario aqui)--> comentarios
+
+<!DOCTYPE html> informa qual versão do HTML está sendo usada
+<head></head> A cabeça do codigo, onde fica as informações principais
+<meta charset="utf-8"> Diz qual a codificação pode ser usada no site, no caso a utf-8 permite caracteres
+<p>paragrafo
+<em> ou <i> italico
+<strong> significa que tem alta importancia, bold
+<img scr="Onde a imagem fica" alt="identificar a imagem por esse nome"> Para adicionar imagens
+<a href="link"> para poder adicionar hyperlinks no site
+
+Exemplo:
+<center>
+<hr>
+<h1>THE ADVENTURES OF <br>SHERLOCK HOLMES</h1>
+<br>
+<h3>by</h3>
+<br>
+<h2>SIR ARTHUR CONAN DOYLE</h2>
+<hr size="3" noshade>
+</center>
+<br>
+<h1>PRIMEIRO NIVEL</h1>
+<h2>SEGUNDO NIVEL</h2>
+<h3>TERCEIRO NIVEL</h3>
+<h4>QUARTO NIVEL</h4>
+<h5>QUINTO NIVEL</h5>
+<h6>SEXTO NIVEL</h6>

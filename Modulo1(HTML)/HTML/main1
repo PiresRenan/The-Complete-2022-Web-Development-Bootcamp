@@ -15,6 +15,19 @@ h1-6 são os 'cabeçalhos' e definem a importancia de cada elemento
 <img scr="Onde a imagem fica" alt="identificar a imagem por esse nome"> Para adicionar imagens
 <a href="link"> para poder adicionar hyperlinks no site
 
+<table>Formatação de tabelas
+<tr>Forma uma celula na tabelas
+<td>Informação dentro da célula
+<thead>Cabeçalho da tabela
+<tbody>Corpo da tabela
+<tfoot>Rodapé da tabela
+
+<form>Tag pra definir que iremos trabalhar com um formulario
+<label>Cria um "titulo"
+<input type=''>Cria um tipo de interação com o usuario
+<textarea> cria uma caixa para digitação de texto
+<form action='argumento para link onde vai o form' method="post">
+
 Exemplo:
 <center>
 <hr>

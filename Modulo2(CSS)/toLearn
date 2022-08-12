@@ -1,0 +1,9 @@
+quando colocamos <body style='...'> o style é uma propriedade do CSS
+
+podemos também estruturar dentro do head como style e colocarmos as propriedades de design do body
+
+estrutura basica de toda sintaxe do css
+
+nome_da_estrutura_que_deseja_alterar {propriedade_que_deseja_alterar : valor;}
+
+DICA: SEMPRE DEIXAR EM ORDEM ALFABETICA PRA FICAR MAIS FACIL DE SE ENCONTRAR

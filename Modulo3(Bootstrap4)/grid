@@ -1,0 +1,61 @@
+<div class="row">
+    <div class="col" style="background-color:red; border: 1px solid">
+        col
+    </div>
+    <div class="col" style="background-color:red; border: 1px solid">
+        col
+    </div>
+</div>
+
+ACIMA VAI DIVIDIR DE FORMA IGUAL E AUTOMATICAMENTE AS COLUNAS
+
+<div class="row">
+    <div class="col-6" style="background-color: green; border:1px solid;">
+        col-6
+    </div>
+    <div class="col-3" style="background-color: green; border:1px solid;">
+        col-3
+    </div>
+    <div class="col-2" style="background-color: green; border:1px solid;">
+        col-2
+    </div>
+    <div class="col-1" style="background-color: green; border:1px solid;">
+        col-1
+    </div>
+</div>
+
+AQUI VAI DIVIDIR DADO O VALOR ASSOSSIADO, SENDO A SOMA TOTAL MAXIMA DEVE SER IGUAL A 12
+
+<div class="row">
+  <div class="col-md-6" style="background-color:blue; border: 1px solid;">
+      col-md-6
+  </div>
+  <div class="col-md-6" style="background-color:blue; border: 1px solid;">
+      col-md-6
+  </div>
+  <div class="col-md-6" style="background-color:yellow; border: 1px solid;">
+      col-md-6
+  </div>
+  <div class="col-md-6" style="background-color:yellow; border: 1px solid;">
+      col-md-6
+  </div>
+  <div class="col-lg-3" style="background-color:orange; border: 1px solid;">
+      col-lg-3
+  </div>
+  <div class="col-lg-3" style="background-color:orange; border: 1px solid;">
+      col-lg-3
+  </div>
+  <div class="col-lg-3" style="background-color:orange; border: 1px solid;">
+      col-lg-3
+  </div>
+  <div class="col-lg-3" style="background-color:orange; border: 1px solid;">
+      col-lg-3
+  </div>
+
+  <div class="col-lg-2 col-md-3" style="background-color: blue; border: 1px solid;">
+        col-lg-2 col-md-3
+    </div>
+    aqui esta preparado para gerir automaticamente em qualquer situação de espaço
+</div>
+
+AQUI AUTOMATICAMENTE IRA PREENCHER DE FORMA DINAMICA A TELA.

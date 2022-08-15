@@ -1,0 +1,5 @@
+Composição
+
+@media (condição) {
+ condição verdadeira, executa aqui
+}

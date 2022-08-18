@@ -1,0 +1,105 @@
+let value = prompt("Compose your tweet:");
+
+alert("Você digitou " + value.length + " caracteres, você tem " + (140 - value.length) + " caracteres restantes.");
+
+JavaScript para conta quantidade de caracteres
+
+//////////////////////////////////////////////////////////
+
+let name = "Renan";
+
+name.slice(0,1);
+
+let value = prompt("Compose your tweet:");
+
+alert("Você digitou " + value.length + " caracteres, você tem " + value.slice(0,140) + " caracteres restantes.");
+
+JavaScript para cortar strings
+
+//////////////////////////////////////////////////////////
+
+let dogAge = prompt("How old is your dog?");
+let humanAge = ((dogAge - 2) * 4) + 21;
+alert("Your dog is " + humanAge + " years old in human years.");
+
+JS pra calcular idade do cachorro em idade humana
+
+/////////////////////////////////////////////////////////
+
+function main(){
+   opcional_direita();
+   opcional_esquerda();
+   opcional_direita();
+   opcional_esquerda();
+   opcional_direita();
+}
+
+function goInCircle() {
+   move();
+   turnLeft();
+   move();
+   turnLeft();
+}
+
+function frente(){
+   move();
+   move();
+   move();
+   move();
+}
+function colocarBeeper(){
+   putBeeper();
+   move();
+   turnLeft();
+   move();
+   turnRight();
+
+}
+function opcional_direita(){
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   turnLeft();
+   move();
+   turnLeft();
+}
+
+function opcional_esquerda(){
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   move();
+   turnRight();
+   move();
+   turnRight();
+}
+
+JS Função treino http://stanford.edu/~cpiech/karel/ide.html
+
+/////////////////////////////////////
+function getMilk() {
+  console.log("leaveHouse");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("enterHouse");
+}

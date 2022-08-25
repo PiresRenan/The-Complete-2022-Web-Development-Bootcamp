@@ -1,0 +1,84 @@
+Gerando um numero aleatorio
+var n = Math.random();
+n = n * 100;
+n = Math.floor(n) + 1;
+console.log(n);
+
+**************************************
+Calculadora de amô
+prompt("What is your name?");
+prompt("What is their name?");
+var loveScore = Math.random()*100;
+loveScore = Math.floor(loveScore) + 1;
+alert("Your love score is " + loveScore + "%");
+
+**************************************
+if e else
+if (loveScore > 70) {
+    alert("Your love score is " + loveScore + "%\n" + "Your love each other like Kanye loves Kanye.");
+}else {
+    alert("Your love score is " + loveScore + "%");
+}
+
+**************************************
+Comparadores
+(===)igual a
+(!==)diferente de
+(>)maior que
+(<)menor que
+(>=)maior ou igual a
+(<=)menor ou igual a
+(&&)a E b
+(||)a OU b
+(!)a NAO b
+
+**************************************
+function bmiCalculator (weight, height) {
+    return (weight / (height*height));
+}
+
+function bmiSelector(bmi) {
+    if(bmi < 18.5){
+        return "Your BMI is " + bmi + ", so you are underweight.";
+    }else if((bmi >= 18.5) && (bmi <= 24.9)){
+        return "Your BMI is " + bmi + ", so you have a normal weight.";
+    }else {
+        return "Your BMI is " + bmi + ", so you are overweight.";
+}
+}
+
+console.log(bmiSelector(bmiCalculator(60, 2)));
+
+***************************************
+LEAP YEAR 
+function isLeap(year) { 
+    if (year % 4 === 0){
+        if(year % 100 === 0){
+            if(year % 400 === 0){
+                return "Leap year.";
+            }
+            else {
+                return "Not leap year.";
+            }
+        }
+        else {
+            return "Leap year.";
+        }
+    }
+    else {
+        return "Not leap year.";
+    }  
+}
+console.log(isLeap(1948));
+
+**************************************
+ARREI 
+var guestList = ["Renan", "Manu", "Luana", "Thayna"];
+
+var guestName = prompt("What's your name?");
+
+if(guestList.includes(guestName)){
+    alert("Convidado!");
+}else {
+    alert("Intruso!");
+}

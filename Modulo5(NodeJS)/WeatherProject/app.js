@@ -10,8 +10,27 @@ app.get("/", function(req, res) {
 });
 
 app.post("/", function(req, res) {
-    req.body.pokemonName
-    console.log("Post recebido");
+    const pokemon = req.body.pokemonName;
+    const url = "https://pokeapi.co/api/v2/pokemon/" + pokemon;
+
+    https.get(url, function(response) {
+
+        console.log(response.statusCode);
+
+        const chunks = [];
+
+        response.on("data", function(data) {
+            chunks.push(data);
+        }).on('end', function() {
+            const data = Buffer.concat(chunks);
+            const pokeData = JSON.parse(data);
+            const name = pokeData.forms[0].name
+            res.write("<h1>O Pokemon " +  name + "</h1>");
+            res.write("So pra fazer funcionar o write.")
+            res.send()
+        });
+        
+    });
 });
 
 

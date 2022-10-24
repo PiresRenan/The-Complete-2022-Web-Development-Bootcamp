@@ -1,78 +1,49 @@
+//jshint esversion:6
 // https://ejs.co/
 
 const express = require("express");
 const bodyParser = require("body-parser");
-const ejs = require("ejs");
+const date = require(__dirname + "/date.js");
 
 const app = express();
 
-app.use(bodyParser.urlencoded({extended: true}));
+let items = ["Comprar Comida", "Cozinhar", "Comer"];
+let workItems = [];
 
 app.set("view engine", "ejs");
 
-app.get("/", function(req, res) {
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static("public"));
 
-    var today = new Date();
-    var options = {
-        weekday: "long",
-        day: "numeric",
-        month: "long"
-    };
-    var day = today.toLocaleDateString("pt-BR", options);
-    var novosItems = [];
-
+app.get("/", (req, res) => {
+    // let day = date.getDay();
+    let day = date.getDate();
     res.render("list", {
-        kindOfDay: day,
-        newListItem: novosItems
-    })
-
-
-    // var diaDeHoje = hoje.getDay();
-    // var day = "";
-
-    // switch (diaDeHoje) {
-    //     case 0:
-    //         day = "DOMINGO";
-    //         res.render("list", { tipoDeDia : day } );
-    //         break;
-    //     case 1:
-    //         day = "SEGUNDA-FEIRA";
-    //         res.render("list", { tipoDeDia : day } );
-    //         break;
-    //     case 2:
-    //         day = "TERÇA-FEIRA";
-    //         res.render("list", { tipoDeDia : day } );
-    //         break;
-    //     case 3:
-    //         day = "QUARTA-FEIRA";
-    //         res.render("list", { tipoDeDia : day } );
-    //         break;
-    //     case 4:
-    //         day = "QUINTA-FEIRA";
-    //         res.render("list", { tipoDeDia : day } );
-    //         break;
-    //     case 5:
-    //         day = "SEXTA-FEIRA";
-    //         res.render("list", { tipoDeDia : day } );
-    //         break;
-    //     case 6:
-    //         day = "SÁBADO";
-    //         res.render("list", { tipoDeDia : day } );
-    //         break;
-
-    //     default:
-    //         console.log("ERRO: O DIA VALOR DO DIA DE HOJE É: " + diaDeHoje);
-    //         break;
-    // }
-
+        listTitle: day,
+        newListItems: items,
+    });
 });
 
 app.post("/", (req, res) => {
-    var novoItem = req.body.addList;
-    novosItems.push(novoItem);
+    let item = req.body.newItem;
+    if (req.body.list === "Work"){
+        workItems.push(item);
+        res.redirect("/work");
+    };
+    items.push(item);
     res.redirect("/");
 });
 
-app.listen(3000, function() {
-    console.log("Servidor conectado.");
+app.get("/work", (req, res) => {
+    res.render("list", {listTitle:"Work List", newListItems: workItems});
+});
+
+app.post("/work", (req, res) => {
+    let item = req.body.newItem;
+    workItems.push(item);
+    res.redirect("/work")
+});
+
+app.listen(3000, () => {
+  console.log("Servidor rodando na porta 3000");
 });

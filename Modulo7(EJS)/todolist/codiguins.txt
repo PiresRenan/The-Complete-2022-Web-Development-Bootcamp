@@ -1,0 +1,37 @@
+ // var diaDeHoje = hoje.getDay();
+    // var day = "";
+
+    // switch (diaDeHoje) {
+    //     case 0:
+    //         day = "DOMINGO";
+    //         res.render("list", { tipoDeDia : day } );
+    //         break;
+    //     case 1:
+    //         day = "SEGUNDA-FEIRA";
+    //         res.render("list", { tipoDeDia : day } );
+    //         break;
+    //     case 2:
+    //         day = "TERÇA-FEIRA";
+    //         res.render("list", { tipoDeDia : day } );
+    //         break;
+    //     case 3:
+    //         day = "QUARTA-FEIRA";
+    //         res.render("list", { tipoDeDia : day } );
+    //         break;
+    //     case 4:
+    //         day = "QUINTA-FEIRA";
+    //         res.render("list", { tipoDeDia : day } );
+    //         break;
+    //     case 5:
+    //         day = "SEXTA-FEIRA";
+    //         res.render("list", { tipoDeDia : day } );
+    //         break;
+    //     case 6:
+    //         day = "SÁBADO";
+    //         res.render("list", { tipoDeDia : day } );
+    //         break;
+
+    //     default:
+    //         console.log("ERRO: O DIA VALOR DO DIA DE HOJE É: " + diaDeHoje);
+    //         break;
+    // }

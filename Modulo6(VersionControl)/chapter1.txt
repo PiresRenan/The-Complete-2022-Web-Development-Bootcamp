@@ -1,0 +1,27 @@
+git init = inicia a sincronização
+
+git status = mostra qual a situação do repositório
+
+git add <nome_da_pasta_ou arquivo_ou_ponto> = adiciona o arquivo selecionado a fila
+
+git -m commit "mensagem" = cria uma mensagem a ser upada junto do codigo
+
+git log = mostra todos os itens relacionados ao envio do codigo, como quem mandou o codigo, a hora ...
+
+git diff <nome_do_arquivo_alterado> = mostra as mudanças feitas
+
+git checkout <nome_do_arquivo_alterado> = volta atrás nas mudanças
+
+git remote add origin <link_do_repositorio> = cria a ligação com o repositorio
+
+git push -u origin master = usa o caminho principal para enviar
+
+criando um arquivo .gitignore podemos "esconder" um arquivo que não queremos que vá durante o push, e adicionamos dentro dele os nomes dos arquivos que nao queremos.
+
+git rm --cached -r = removemos todos os itens em fila para enviar
+
+git clone <link_que_quer_clonar> = copia do git hub
+
+git branch <nome_da_branch_que_quer_criar> = cria uma rota alternativa da main para fazer os deploys, pode ser util pra testes, git branch para verificar todas as branch
+
+git checkout <nome_da_branch> = para mudar a branch

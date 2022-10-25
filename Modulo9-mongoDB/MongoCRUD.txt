@@ -1,0 +1,10 @@
+
+* baixar e instalar mongoDB e mongodb shell >
+* mostrar as tabelas = "show dbs" >
+* criar e usar uma table nova = "use <nome do db que quer criar ou usar>" >
+* INSERIR = "db.<nome da db>.insertOne( {_id: 1, name: "Pen"} )" ou "insertAll()" >
+* Mostrar as colunas = "show colletions" >
+* LER = "db.<nome da db>.find({_id: 1}) ou apenas ".find()", para encontrar todos >
+* UPDATE = "db.<nome da db>.updateOne( { _id: 1 }, { $set: { stock: 32 } } ) >
+* DELETAR = "db.<nome da db>.deleteOne( { _id: 1 } ) > 
+* deletar um database = "use <db>" > "db.dropDatabase()" 

@@ -39,7 +39,6 @@ app.route("/articles/:articleTitle")
   Article.updateOne(
     {title: req.params.articleTitle},
     {title: req.body.title, content: req.body.content},
-    {overwrite: true},
     (err) => {
       if (!err) {
         res.send("Success update")
@@ -49,6 +48,32 @@ app.route("/articles/:articleTitle")
     }
   );
 })
+.patch((req, res) => {
+
+  Article.updateOne(
+    {title: req.params.articleTitle},
+    {$set: req.body},
+    (err) => {
+      if(!err){
+        res.send("Success update")
+      }else {
+        res.send(err)
+      }
+    }
+  )
+})
+.delete((req, res) => {
+  Article.deleteOne(
+    {title: req.params.articleTitle},
+    (err)=> {
+      if(!err){
+        res.send("Success deleted")
+      }else {
+        res.send(err)
+      }
+    }
+  )
+});
 
 ///////////         INTERAÇÃO GENERALIZADA          ////////////////////
 

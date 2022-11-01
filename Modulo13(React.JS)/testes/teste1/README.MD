@@ -1,0 +1,1 @@
+Criar um react app do começo, que deverá ter um h1, uma lista desordenada(ul) e 3 elementos na lista

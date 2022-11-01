@@ -1,0 +1,1 @@
+Criar um react app do começo, deve adicionar 3 imagens aleatorias e usar o css para padronizar o tamanho delas em 100px por 100px.

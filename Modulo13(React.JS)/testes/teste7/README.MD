@@ -1,0 +1,1 @@
+Criar um react app do começo, deve mostrar 2 paragrafos, os paragrafos devem dizer "Criado por (seu nome)", e "Copyright (ano atual).

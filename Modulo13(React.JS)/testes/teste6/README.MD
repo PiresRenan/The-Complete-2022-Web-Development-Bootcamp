@@ -1,1 +1,1 @@
-Criar um react app do começo, deve mostrar 2 paragrafos, os paragrafos devem dizer "Criado por (seu nome)", e "Copyright (ano atual).
+Criar um react app do começo, import as funções add, multiplicar, dividir e sub de um arquivo chamado calculator.js

@@ -1,0 +1,8 @@
+1. npx create-react-app <nome>
+2.cd my-app
+3.npm start
+extra: 
+npm start = Inicia o servidor de desenvolvimento.
+npm run build = Cria arquivos em public.
+npm test = Inicia o debugger.
+npm run eject = Remove essa ferramenta e copia todas as dependencias de construção, arquivos de configuração e scripts na pasta diretorio app. Se fizer, não há volta!

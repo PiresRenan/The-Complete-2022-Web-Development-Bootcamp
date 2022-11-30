@@ -4,7 +4,7 @@ git status = mostra qual a situação do repositório
 
 git add <nome_da_pasta_ou arquivo_ou_ponto> = adiciona o arquivo selecionado a fila
 
-git -m commit "mensagem" = cria uma mensagem a ser upada junto do codigo
+git commit -m "mensagem" = cria uma mensagem a ser upada junto do codigo
 
 git log = mostra todos os itens relacionados ao envio do codigo, como quem mandou o codigo, a hora ...
 

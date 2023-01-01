@@ -1,0 +1,4 @@
+service : {
+  balanceOf: (principal) -> (nat) query;
+  getSymbol: () -> (text) query;
+}

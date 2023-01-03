@@ -5,4 +5,5 @@ export interface _SERVICE {
   'balanceOf' : ActorMethod<[Principal], bigint>,
   'getSymbol' : ActorMethod<[], string>,
   'payOut' : ActorMethod<[], string>,
+  'transfer' : ActorMethod<[Principal, bigint], string>,
 }

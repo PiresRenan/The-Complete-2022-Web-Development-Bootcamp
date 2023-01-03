@@ -32,6 +32,7 @@ dfx canister call token balanceOf "( $OWNER_PUBLIC_KEY )"
 1. Check canister ID:
 ```
 dfx canister id token
+rrkah-fqaaa-aaaaa-aaaaq-cai
 ```
 
 2. Save canister ID into a command line variable:
